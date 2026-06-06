@@ -1,0 +1,51 @@
+/* Reseta margens para ocupar 100% da tela */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #000;
+    font-family: 'Courier New', Courier, monospace;
+    height: 100vh;
+    overflow: hidden; /* Impede a tela de rolar no mobile */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+/* O canvas vai ficar jogado lá no fundo */
+#matrixCanvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+/* O card de texto fica por cima dos números */
+.menu-container {
+    position: relative;
+    z-index: 2;
+    background: rgba(0, 0, 0, 0.75); /* Fundo preto levemente transparente */
+    padding: 30px 20px;
+    border: 1px solid #0f0; /* Borda verde neon */
+    border-radius: 12px;
+    box-shadow: 0 0 20px rgba(0, 255, 0, 0.4);
+    width: 90%; /* Adapta perfeitamente à tela do celular */
+    max-width: 400px;
+}
+
+h1 {
+    color: #0f0;
+    font-size: 2em;
+    margin-bottom: 10px;
+    text-shadow: 0 0 10px #0f0;
+}
+
+p {
+    color: #0a0; /* Um verde um pouco mais escuro para o subtítulo */
+    font-size: 1.1em;
+    font-weight: bold;
+  }
