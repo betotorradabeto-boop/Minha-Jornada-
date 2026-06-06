@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Minha Jornada na Terra</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+    <canvas id="matrixCanvas"></canvas>
+
+    <div id="mainMenu" class="menu-container">
+        <h1>Minha Jornada na Terra</h1>
+        <p>(Ainda não em Marte)</p>
+        <button class="hacker-btn" onclick="abrirCentral()">Abrir Central de Comando</button>
+    </div>
+
+    <div id="centralComando" class="menu-container hidden">
+        <h2>CENTRAL DE COMANDO</h2>
+        <div class="painel-dados">
+            <p><strong>OPERADOR:</strong> Roberto</p>
+            <p><strong>DATA:</strong> <span id="dataAtual">Carregando...</span></p>
+            <p><strong>HORA (SP):</strong> <span id="horaAtual">Carregando...</span></p>
+        </div>
+        <button class="hacker-btn btn-voltar" onclick="fecharCentral()">Fechar Painel</button>
+    </div>
+
+    <script src="assets/js/script.js"></script>
+</body>
+</html>
